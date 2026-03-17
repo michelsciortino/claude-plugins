@@ -1,0 +1,10 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "michelsciortino-marketplace",
+  "description": "My personal marketplace for testing and development. Not an official Anthropic marketplace.",
+  "owner": {
+    "name": "@michelsciortino"
+  },
+  "plugins": [
+  ]
+}
