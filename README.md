@@ -19,6 +19,7 @@ Or browse for plugins in `/plugin > Discover`.
 | Plugin | Description |
 |--------|-------------|
 | [`dart-lsp`](external_plugins/dart-lsp/README.md) | Dart/Flutter language server — go-to-definition, find references, hover info, and error checking for `.dart` files |
+| [`flutter-clean-architecture`](external_plugins/flutter-clean-architecture/README.md) | Flutter Clean Architecture skill system — enforces Google's 3-layer architecture, naming conventions, anti-patterns, and UI widget reusability |
 
 ## Plugin Structure
 

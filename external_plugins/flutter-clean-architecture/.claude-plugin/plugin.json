@@ -1,0 +1,8 @@
+{
+  "name": "flutter-clean-architecture",
+  "description": "Flutter Clean Architecture skill system following Google's official architecture guidelines. Enforces 3-layer architecture (UI / Data / Domain), naming conventions, anti-patterns, and UI widget reusability across all Flutter projects.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@michelsciortino"
+  }
+}
