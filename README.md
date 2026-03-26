@@ -6,7 +6,13 @@ A personal marketplace of plugins for Claude Code.
 
 ## Installation
 
-To install a plugin from this marketplace, run:
+### 1. Add this marketplace
+
+```
+/plugin marketplace add https://github.com/michelsciortino/claude-plugins
+```
+
+### 2. Install a plugin
 
 ```
 /plugin install {plugin-name}@michelsciortino-marketplace
