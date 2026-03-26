@@ -37,6 +37,27 @@
       ]
     },
     {
+      "name": "docbase",
+      "description": "Documentation-driven development system that enforces docs as the sole source of truth, with automatic cross-reference integrity checking and doc↔code consistency enforcement.",
+      "version": "1.0.0",
+      "author": {
+        "name": "@michelsciortino"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/michelsciortino/claude-plugins.git",
+        "path": "external_plugins/docbase",
+        "ref": "main"
+      },
+      "category": "development",
+      "strict": false,
+      "tags": [
+        "community-managed",
+        "documentation",
+        "workflow"
+      ]
+    },
+    {
       "name": "flutter-clean-architecture",
       "description": "Flutter Clean Architecture skill system following Google's official architecture guidelines",
       "version": "1.0.0",
