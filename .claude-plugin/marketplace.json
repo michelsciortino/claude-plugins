@@ -77,6 +77,28 @@
         "flutter",
         "dart"
       ]
+    },
+    {
+      "name": "terraform-clean-architecture",
+      "description": "Terraform/OpenTofu best practices skill — module structure, testing, CI/CD, security, and code generation following HashiCorp official guidelines",
+      "version": "1.0.0",
+      "author": {
+        "name": "@michelsciortino"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/michelsciortino/claude-plugins.git",
+        "path": "external_plugins/terraform-clean-architecture",
+        "ref": "main"
+      },
+      "category": "development",
+      "strict": false,
+      "tags": [
+        "community-managed",
+        "terraform",
+        "opentofu",
+        "infrastructure-as-code"
+      ]
     }
   ]
 }
