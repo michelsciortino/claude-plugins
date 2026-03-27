@@ -151,7 +151,7 @@ while IFS= read -r doc_file; do
 
   while IFS= read -r impl_path; do
     [[ -z "$impl_path" ]] && continue
-    abs_impl="$PROJECT_ROOT/$impl_path"
+    abs_impl="$PROJECT_ROOT/${impl_path#/}"
 
     if [[ ! -f "$abs_impl" ]]; then
       fname=$(issue_filename "doc-drift" "${rel_doc}:${impl_path}")

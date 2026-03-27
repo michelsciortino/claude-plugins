@@ -29,9 +29,16 @@ Check code↔doc conformance across the entire project.
    Store the output as CHANGED_FILES (newline-separated relative paths, may be empty).
    If empty: all pairs will be treated as affected (full semantic sweep).
 
-4. **Run check-drift.sh** via Bash tool (substitute resolved values — do not pass literal placeholders):
+4. **Locate and run check-drift.sh** via Bash tool (substitute resolved values — do not pass literal placeholders):
+   First, find the script:
    ```bash
-   ~/.claude/plugins/cache/docbase/scripts/check-drift.sh \
+   find ~/.claude/plugins -name "check-drift.sh" -path "*/docbase/*/scripts/*" 2>/dev/null | sort -V | tail -1
+   ```
+   Store the result as CHECK_DRIFT_SH. If empty, tell the user the docbase plugin scripts could not be found and to reinstall the plugin.
+
+   Then run it:
+   ```bash
+   bash "{CHECK_DRIFT_SH}" \
      "{PROJECT_ROOT}" "{DOC_ROOT}" "{ISSUES_DIR}" '{SOURCE_ROOTS_JSON}' "{CHANGED_FILES}"
    ```
    Parse the JSON output. Store `doc_drift`, `undocumented`, and `valid_impl_pairs`.

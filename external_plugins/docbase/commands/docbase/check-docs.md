@@ -28,9 +28,16 @@ Check documentation cross-reference consistency across the entire project.
    Store the output as CHANGED_FILES (newline-separated relative paths, may be empty).
    If empty: all edges will be treated as affected (full semantic sweep).
 
-4. **Run check-links.sh** via Bash tool (substitute resolved values — do not pass literal placeholders):
+4. **Locate and run check-links.sh** via Bash tool (substitute resolved values — do not pass literal placeholders):
+   First, find the script:
    ```bash
-   ~/.claude/plugins/cache/docbase/scripts/check-links.sh \
+   find ~/.claude/plugins -name "check-links.sh" -path "*/docbase/*/scripts/*" 2>/dev/null | sort -V | tail -1
+   ```
+   Store the result as CHECK_LINKS_SH. If empty, tell the user the docbase plugin scripts could not be found and to reinstall the plugin.
+
+   Then run it:
+   ```bash
+   bash "{CHECK_LINKS_SH}" \
      "{PROJECT_ROOT}" "{DOC_ROOT}" "{ISSUES_DIR}" "{CHANGED_FILES}"
    ```
    Parse the JSON output. Store `undeclared_references`, `broken_links`, and `valid_edges`.

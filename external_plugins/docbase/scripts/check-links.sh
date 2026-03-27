@@ -139,8 +139,10 @@ extract_body_links() {
 }
 
 # Resolve a PROJECT_ROOT-relative path to absolute.
+# Strips a leading / from the path to avoid double-slash when paths are written as /docs/...
 resolve_from_root() {
-  echo "$PROJECT_ROOT/$1"
+  local path="${1#/}"
+  echo "$PROJECT_ROOT/$path"
 }
 
 # Resolve a file-relative path to absolute, then normalize.

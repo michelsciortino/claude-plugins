@@ -37,7 +37,19 @@ Initialize DocBase for the current project. Run once at the project root.
 5. **Optionally scaffold doc_root**
    - Ask: "Would you like me to scaffold a directory structure under `<doc_root>` based on your source roots?"
    - If yes: create one subdirectory per source root name plus a `cross-cutting/` directory.
-   - Create a `README.md` in each with minimal DocBase frontmatter template. Use markdown link format for `implementation:` and `related:` values, e.g. `"[filename.ts](relative/path/to/file.ts)"`.
+   - Create a `README.md` in each with minimal DocBase frontmatter template.
+   - **Link format rules**:
+     - Frontmatter (`related:`, `implementation:`) — single-quoted, path starts with `/`:
+       ```yaml
+       related:
+         - '[data-model](/docs/data-model.md)'
+       implementation:
+         - '[meals.ts](/backend/src/meals.ts)'
+       ```
+     - Body markdown links — no quotes, path starts with `/`:
+       ```markdown
+       See [data-model](/docs/data-model.md) for details.
+       ```
 
 6. **Confirm**
    - Print a summary of what was created/modified.
