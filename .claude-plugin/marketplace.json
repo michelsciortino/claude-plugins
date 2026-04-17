@@ -14,24 +14,11 @@
         "name": "@michelsciortino"
       },
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/michelsciortino/claude-plugins.git",
-        "path": "external_plugins/dart-lsp",
-        "ref": "main"
+        "source": "url",
+        "url": "https://github.com/michelsciortino/dart-lsp.git"
       },
       "category": "development",
-      "strict": false,
-      "lspServers": {
-        "dart": {
-          "command": "dart",
-          "args": [
-            "language-server"
-          ],
-          "extensionToLanguage": {
-            ".dart": "dart"
-          }
-        }
-      },
+      "strict": true,
       "tags": [
         "community-managed"
       ]
@@ -44,13 +31,11 @@
         "name": "@michelsciortino"
       },
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/michelsciortino/claude-plugins.git",
-        "path": "external_plugins/docbase",
-        "ref": "main"
+        "source": "url",
+        "url": "https://github.com/michelsciortino/docbase.git"
       },
       "category": "development",
-      "strict": false,
+      "strict": true,
       "tags": [
         "community-managed",
         "documentation",
@@ -65,13 +50,11 @@
         "name": "@michelsciortino"
       },
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/michelsciortino/claude-plugins.git",
-        "path": "external_plugins/flutter-clean-architecture",
-        "ref": "main"
+        "source": "url",
+        "url": "https://github.com/michelsciortino/flutter-clean-architecture.git"
       },
       "category": "development",
-      "strict": false,
+      "strict": true,
       "tags": [
         "community-managed",
         "flutter",
@@ -86,13 +69,11 @@
         "name": "@michelsciortino"
       },
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/michelsciortino/claude-plugins.git",
-        "path": "external_plugins/terraform-clean-architecture",
-        "ref": "main"
+        "source": "url",
+        "url": "https://github.com/michelsciortino/terraform-clean-architecture.git"
       },
       "category": "development",
-      "strict": false,
+      "strict": true,
       "tags": [
         "community-managed",
         "terraform",
